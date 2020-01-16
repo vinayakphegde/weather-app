@@ -6,7 +6,7 @@ const geocode=require("./utils/geocode.js");
 const app=express();
 const hbs=require("hbs");
 
-const port=process.env.port || 3000;
+const port=process.env.PORT || 3000;
 
 //defining paths for Express configuration
 const publicDir=path.join(__dirname,"../public");
