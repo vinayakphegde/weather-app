@@ -6,6 +6,8 @@ const geocode=require("./utils/geocode.js");
 const app=express();
 const hbs=require("hbs");
 
+const port=process.env.port || 3000;
+
 //defining paths for Express configuration
 const publicDir=path.join(__dirname,"../public");
 const viewDir=path.join(__dirname,"../templetes/views");
@@ -76,6 +78,6 @@ app.get("*",(req,res)=>{
 })
 
 
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log("Server started");
 })

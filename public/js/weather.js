@@ -9,7 +9,7 @@ but.addEventListener("click",()=>{
     var lac=I.value;
     console.log(lac);
     p1[0].textContent="Loading...";
-    const url="http://localhost:3000/weather?adress="+lac;
+    const url="/weather?adress="+lac;
     fetch(url).then((res)=>{
            res.json().then((data)=>{
            if(data.error)
